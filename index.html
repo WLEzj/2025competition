@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界大战2025获奖人物排名</title>
+    <script src="https://cdn.tailwindcss.com/3.3.3"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+            color: #e5e5e5;
+            font-family: 'Noto Sans SC', sans-serif;
+        }
+        .card {
+            transition: all 0.3s ease;
+            background: linear-gradient(145deg, #2a2a2a 0%, #1e1e1e 100%);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+        }
+        .card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 12px 40px 0 rgba(255, 215, 0, 0.2);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+        .rank-badge {
+            background: linear-gradient(135deg, #ffd700 0%, #daa520 100%);
+            color: #1a1a1a;
+            box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+        }
+        .gold-text {
+            color: #ffd700;
+        }
+        .rank-1 .rank-badge {
+            background: linear-gradient(135deg, #ffd700 0%, #c0a020 100%);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+        .rank-2 .rank-badge {
+            background: linear-gradient(135deg, #c0c0c0 0%, #a0a0a0 100%);
+            box-shadow: 0 0 15px rgba(192, 192, 192, 0.4);
+        }
+        .rank-3 .rank-badge {
+            background: linear-gradient(135deg, #cd7f32 0%, #a05a2c 100%);
+            box-shadow: 0 0 10px rgba(205, 127, 50, 0.3);
+        }
+        .hover-info {
+            opacity: 0;
+            transition: all 0.3s ease;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .card:hover .hover-info {
+            opacity: 1;
+        }
+        @media (max-width: 640px) {
+            .card {
+                flex-direction: column;
+            }
+            .card-img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen py-12 px-4 md:px-8">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 gold-text">世界大战2025</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold">获奖人物排名</h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-amber-500 to-transparent mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- 人物卡片循环 -->
+            <div class="card rounded-xl overflow-hidden rank-1">
+                <div class="flex flex-col md:flex-row">
+                    <div class="relative w-full md:w-1/3">
+                        <img src="https://s.coze.cn/image/WeIY_z5mMno/" alt="提利昂·兰尼斯特" class="w-full h-64 md:h-full object-cover card-img">
+                        <div class="absolute top-4 left-4 w-10 h-10 rounded-full flex items-center justify-center rank-badge font-bold text-lg">1</div>
+                    </div>
+                    <div class="p-4 w-full md:w-2/3">
+                        <h3 class="text-xl font-bold mb-2 gold-text">提利昂·兰尼斯特</h3>
+                        <div class="hover-info p-3 rounded-lg mt-2">
+                            <p class="text-sm"><i class="fas fa-film mr-2"></i>作品来源: 《权力的游戏》</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card rounded-xl overflow-hidden rank-2">
+                <div class="flex flex-col md:flex-row">
+                    <div class="relative w-full md:w-1/3">
+                        <img src="https://s.coze.cn/image/7lV8r6PhE3s/" alt="托尼·史塔克" class="w-full h-64 md:h-full object-cover card-img">
+                        <div class="absolute top-4 left-4 w-10 h-10 rounded-full flex items-center justify-center rank-badge font-bold text-lg">2</div>
+                    </div>
+                    <div class="p-4 w-full md:w-2/3">
+                        <h3 class="text-xl font-bold mb-2 gold-text">托尼·史塔克</h3>
+                        <div class="hover-info p-3 rounded-lg mt-2">
+                            <p class="text-sm"><i class="fas fa-film mr-2"></i>作品来源: 《钢铁侠》</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card rounded-xl overflow-hidden rank-3">
+                <div class="flex flex-col md:flex-row">
+                    <div class="relative w-full md:w-1/3">
+                        <img src="https://s.coze.cn/image/jBX-VPk9Aqs/" alt="哈利·波特" class="w-full h-64 md:h-full object-cover card-img">
+                        <div class="absolute top-4 left-4 w-10 h-10 rounded-full flex items-center justify-center rank-badge font-bold text-lg">3</div>
+                    </div>
+                    <div class="p-4 w-full md:w-2/3">
+                        <h3 class="text-xl font-bold mb-2 gold-text">哈利·波特</h3>
+                        <div class="hover-info p-3 rounded-lg mt-2">
+                            <p class="text-sm"><i class="fas fa-film mr-2"></i>作品来源: 《哈利波特》系列</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 剩余人物卡片 -->
+            <div class="card rounded-xl overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="relative w-full md:w-1/3">
+                        <img src="https://i.imgs.ovh/2025/10/08/7DmWhX.jpeg" alt="怀特" class="w-full h-64 md:h-full object-cover card-img">
+                        <div class="absolute top-4 left-4 w-10 h-10 rounded-full flex items-center justify-center rank-badge font-bold text-lg">4</div>
+                    </div>
+                    <div class="p-4 w-full md:w-2/3">
+                        <h3 class="text-xl font-bold mb-2 gold-text">怀特</h3>
+                        <div class="hover-info p-3 rounded-lg mt-2">
+                            <p class="text-sm"><i class="fas fa-skiing mr-2"></i>作品来源: 《悠悠球传奇》</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card rounded-xl overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="relative w-full md:w-1/3">
+                        <img src="https://s.coze.cn/image/gfXH_B7iGQc/" alt="克劳德" class="w-full h-64 md:h-full object-cover card-img">
+                        <div class="absolute top-4 left-4 w-10 h-10 rounded-full flex items-center justify-center rank-badge font-bold text-lg">5</div>
+                    </div>
+                    <div class="p-4 w-full md:w-2/3">
+                        <h3 class="text-xl font-bold mb-2 gold-text">克劳德</h3>
+                        <div class="hover-info p-3 rounded-lg mt-2">
+                            <p class="text-sm"><i class="fas fa-gamepad mr-2"></i>作品来源: 《最终幻想7》</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card rounded-xl overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="relative w-full md:w-1/3">
+                        <img src="https://i.imgs.ovh/2025/10/08/7DmDXN.png" alt="冷月" class="w-full h-64 md:h-full object-cover card-img">
+                        <div class="absolute top-4 left-4 w-10 h-10 rounded-full flex items-center justify-center rank-badge font-bold text-lg">6</div>
+                    </div>
+                    <div class="p-4 w-full md:w-2/3">
+                        <h3 class="text-xl font-bold mb-2 gold-text">冷月</h3>
+                        <div class="hover-info p-3 rounded-lg mt-2">
+                            <p class="text-sm"><i class="fas fa-gamepad mr-2"></i>作品来源: 《悠悠球传奇》</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card rounded-xl overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="relative w-full md:w-1/3">
+                        <img src="https://s.coze.cn/image/LJhA6F2q6dw/" alt="阿拉贡二世" class="w-full h-64 md:h-full object-cover card-img">
+                        <div class="absolute top-4 left-4 w-10 h-10 rounded-full flex items-center justify-center rank-badge font-bold text-lg">7</div>
+                    </div>
+                    <div class="p-4 w-full md:w-2/3">
+                        <h3 class="text-xl font-bold mb-2 gold-text">阿拉贡二世</h3>
+                        <div class="hover-info p-3 rounded-lg mt-2">
+                            <p class="text-sm"><i class="fas fa-film mr-2"></i>作品来源: 《魔戒》</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card rounded-xl overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="relative w-full md:w-1/3">
+                        <img src="https://s.coze.cn/image/KtADAUkorTI/" alt="索林·橡木盾" class="w-full h-64 md:h-full object-cover card-img">
+                        <div class="absolute top-4 left-4 w-10 h-10 rounded-full flex items-center justify-center rank-badge font-bold text-lg">8</div>
+                    </div>
+                    <div class="p-4 w-full md:w-2/3">
+                        <h3 class="text-xl font-bold mb-2 gold-text">索林·橡木盾</h3>
+                        <div class="hover-info p-3 rounded-lg mt-2">
+                            <p class="text-sm"><i class="fas fa-film mr-2"></i>作品来源: 《霍比特人》</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card rounded-xl overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="relative w-full md:w-1/3">
+                        <img src="https://s.coze.cn/image/IwEvJxJnihg/" alt="阿布思·邓布利多" class="w-full h-64 md:h-full object-cover card-img">
+                        <div class="absolute top-4 left-4 w-10 h-10 rounded-full flex items-center justify-center rank-badge font-bold text-lg">9</div>
+                    </div>
+                    <div class="p-4 w-full md:w-2/3">
+                        <h3 class="text-xl font-bold mb-2 gold-text">阿布思·邓布利多</h3>
+                        <div class="hover-info p-3 rounded-lg mt-2">
+                            <p class="text-sm"><i class="fas fa-film mr-2"></i>作品来源: 《哈利波特》系列</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card rounded-xl overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="relative w-full md:w-1/3">
+                        <img src="https://s.coze.cn/image/K8LlrO9tMt0/" alt="海马濑人" class="w-full h-64 md:h-full object-cover card-img">
+                        <div class="absolute top-4 left-4 w-10 h-10 rounded-full flex items-center justify-center rank-badge font-bold text-lg">10</div>
+                    </div>
+                    <div class="p-4 w-full md:w-2/3">
+                        <h3 class="text-xl font-bold mb-2 gold-text">海马濑人</h3>
+                        <div class="hover-info p-3 rounded-lg mt-2">
+                            <p class="text-sm"><i class="fas fa-gamepad mr-2"></i>作品来源: 《游戏王》</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card rounded-xl overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="relative w-full md:w-1/3">
+                        <img src="https://s.coze.cn/image/A3gV6rzOvuI/" alt="杰克·斯派罗" class="w-full h-64 md:h-full object-cover card-img">
+                        <div class="absolute top-4 left-4 w-10 h-10 rounded-full flex items-center justify-center rank-badge font-bold text-lg">11</div>
+                    </div>
+                    <div class="p-4 w-full md:w-2/3">
+                        <h3 class="text-xl font-bold mb-2 gold-text">杰克·斯派罗</h3>
+                        <div class="hover-info p-3 rounded-lg mt-2">
+                            <p class="text-sm"><i class="fas fa-film mr-2"></i>作品来源: 《加勒比海盗》</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card rounded-xl overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="relative w-full md:w-1/3">
+                        <img src="https://s.coze.cn/image/YL4FREus10E/" alt="劳埃德·福杰" class="w-full h-64 md:h-full object-cover card-img">
+                        <div class="absolute top-4 left-4 w-10 h-10 rounded-full flex items-center justify-center rank-badge font-bold text-lg">12</div>
+                    </div>
+                    <div class="p-4 w-full md:w-2/3">
+                        <h3 class="text-xl font-bold mb-2 gold-text">劳埃德·福杰</h3>
+                        <div class="hover-info p-3 rounded-lg mt-2">
+                            <p class="text-sm"><i class="fas fa-film mr-2"></i>作品来源: 《间谍过家家》</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card rounded-xl overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="relative w-full md:w-1/3">
+                        <img src="https://s.coze.cn/image/-V5Sc9p3MzM/" alt="游城十代" class="w-full h-64 md:h-full object-cover card-img">
+                        <div class="absolute top-4 left-4 w-10 h-10 rounded-full flex items-center justify-center rank-badge font-bold text-lg">13</div>
+                    </div>
+                    <div class="p-4 w-full md:w-2/3">
+                        <h3 class="text-xl font-bold mb-2 gold-text">游城十代</h3>
+                        <div class="hover-info p-3 rounded-lg mt-2">
+                            <p class="text-sm"><i class="fas fa-gamepad mr-2"></i>作品来源: 《游戏王》</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card rounded-xl overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="relative w-full md:w-1/3">
+                        <img src="https://vignette.wikia.nocookie.net/yugioh/images/d/d1/YugiMuto-DULI.png/revision/latest/scale-to-width-down/290?cb=20180331132907" alt="表游戏" class="w-full h-64 md:h-full object-cover card-img">
+                        <div class="absolute top-4 left-4 w-10 h-10 rounded-full flex items-center justify-center rank-badge font-bold text-lg">14</div>
+                    </div>
+                    <div class="p-4 w-full md:w-2/3">
+                        <h3 class="text-xl font-bold mb-2 gold-text">表游戏</h3>
+                        <div class="hover-info p-3 rounded-lg mt-2">
+                            <p class="text-sm"><i class="fas fa-gamepad mr-2"></i>作品来源: 《游戏王》</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card rounded-xl overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="relative w-full md:w-1/3">
+                        <img src="https://s.coze.cn/image/_o7FSeM8Q7E/" alt="西弗勒斯·斯内普" class="w-full h-64 md:h-full object-cover card-img">
+                        <div class="absolute top-4 left-4 w-10 h-10 rounded-full flex items-center justify-center rank-badge font-bold text-lg">15</div>
+                    </div>
+                    <div class="p-4 w-full md:w-2/3">
+                        <h3 class="text-xl font-bold mb-2 gold-text">西弗勒斯·斯内普</h3>
+                        <div class="hover-info p-3 rounded-lg mt-2">
+                            <p class="text-sm"><i class="fas fa-film mr-2"></i>作品来源: 《哈利波特》系列</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card rounded-xl overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="relative w-full md:w-1/3">
+                        <img src="https://s.coze.cn/image/9rErM1AUGn4/" alt="山姆卫斯" class="w-full h-64 md:h-full object-cover card-img">
+                        <div class="absolute top-4 left-4 w-10 h-10 rounded-full flex items-center justify-center rank-badge font-bold text-lg">16</div>
+                    </div>
+                    <div class="p-4 w-full md:w-2/3">
+                        <h3 class="text-xl font-bold mb-2 gold-text">山姆卫斯</h3>
+                        <div class="hover-info p-3 rounded-lg mt-2">
+                            <p class="text-sm"><i class="fas fa-film mr-2"></i>作品来源: 《魔戒》</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-16 text-center text-gray-500 text-sm">
+        <p>created by <a href="https://space.coze.cn" class="text-amber-500 hover:text-amber-400">coze space</a></p>
+    </footer>
+</body>
+</html>
